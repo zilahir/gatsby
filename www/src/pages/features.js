@@ -19,6 +19,8 @@ import {
 
 const legendBorderColor = colors.ui.border.subtle
 
+// su
+
 const LegendTable = () => {
   const legendBallStyle = {
     float: `none`,
