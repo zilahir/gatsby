@@ -3,6 +3,9 @@ import Img from "gatsby-image"
 
 import { space, radii } from "../utils/presets"
 
+
+// su 
+
 const Avatar = ({ image, alt }) => (
   <Img
     alt={alt ? alt : ``}
