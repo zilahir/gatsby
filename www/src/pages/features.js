@@ -89,7 +89,7 @@ const LegendTable = () => {
   return (
     <div>
       <Helmet>
-        <title>Features</title>
+        <title>Features!!</title>
         <meta
           name="description"
           content="Learn how specific features like performance and support for modern technologies make Gatsby worth using."
