@@ -4,13 +4,14 @@ import Img from "gatsby-image"
 import { space, radii } from "../utils/presets"
 
 
-// suhhh
+// suhhh!!
 
 const Avatar = ({ image, alt }) => (
   <Img
     alt={alt ? alt : ``}
     fixed={image}
     css={{
+      padding: 0,
       borderRadius: radii[6],
       display: `inline-block`,
       // todo remove
