@@ -1,9 +1,18 @@
 const { sep } = require(`path`)
+const os = require(`os`)
 
 // Removes all user paths
 const regexpEscape = str => str.replace(/[-[/{}()*+?.\\^$|]/g, `\\$&`)
 const cleanPaths = (str, separator = sep) => {
-  const stack = process.cwd().split(separator)
+  // escape homedir with
+  str = str.replace(
+    new RegExp(regexpEscape(os.homedir()).replace(/\\/g, `\\\\`), `g`),
+    `$HOME`
+  )
+  const stack = process
+    .cwd()
+    .replace(os.homedir(), `$HOME`)
+    .split(separator)
 
   while (stack.length > 1) {
     const currentPath = stack.join(separator)
