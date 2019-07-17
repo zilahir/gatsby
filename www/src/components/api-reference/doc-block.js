@@ -58,7 +58,7 @@ const APILink = ({ definition, githubPath }) => {
         aria-label="View source on GitHub"
       >
         <GithubIcon focusable="false" style={{ marginRight: space[2] }} />
-        <span>Source!!!</span>
+        <span>Source!!!!</span>
       </a>
     )
   }
