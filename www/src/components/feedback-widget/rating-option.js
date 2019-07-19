@@ -8,7 +8,7 @@ const animA = keyframes`
   from  {
     transform: translate3d(0,0,0);
   }
-  20%, 53%, 80%, to {
+  20%, 52%, 80%, to {
     transform: translate3d(0,0.3rem,0);
   }
 
