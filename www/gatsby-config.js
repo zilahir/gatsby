@@ -58,7 +58,9 @@ module.exports = {
     "Mdx.frontmatter.author": `AuthorYaml`,
   },
   plugins: [
-    // https://github.com/gatsbyjs/gatsby/issues/11961#issuecomment-492893594
+    /*
+     * https://github.com/gatsbyjs/gatsby/issues/11961#issuecomment-492893594
+     */
     `gatsby-plugin-remove-fingerprints`,
     {
       resolve: `gatsby-source-npm-package-search`,
