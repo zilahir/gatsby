@@ -963,6 +963,7 @@ actions.createNodeField = (
     type: `ADD_FIELD_TO_NODE`,
     plugin,
     payload: node,
+    addedField: name,
   }
 }
 
