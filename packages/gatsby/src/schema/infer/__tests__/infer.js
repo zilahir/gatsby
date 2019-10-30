@@ -123,7 +123,10 @@ describe(`GraphQL type inference`, () => {
         payload: { name, extension },
       })
     })
-    const { fieldExtensions } = store.getState().schemaCustomization
+    const {
+      schemaCustomization: { fieldExtensions },
+      inferenceMetadata,
+    } = store.getState()
     const schemaComposer = createSchemaComposer({ fieldExtensions })
     const schema = await buildSchema({
       schemaComposer,
@@ -133,6 +136,7 @@ describe(`GraphQL type inference`, () => {
       thirdPartySchemas: [],
       typeMapping: [],
       typeConflictReporter,
+      inferenceMetadata,
       ...(buildSchemaArgs || {}),
     })
     return { schema, schemaComposer }
