@@ -14,7 +14,7 @@
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
-    "@testing-library/react": "^9.3.0",
+    "@testing-library/react": "^9.3.1",
     "babel-preset-gatsby-package": "^0.2.9",
     "cross-env": "^5.2.1"
   },
